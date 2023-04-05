@@ -2,84 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 </head>
 <body>
+  <header>
+    <nav class="nav-container">
+      <a href="#"><img src="assets/images/logo.svg" alt="Logo Shortly" class="nav__logo"></a>
+      <input type="checkbox" id="nav__icon-menu">
+      <nav class="nav-items">
+        <ul class="nav__list">
+          <li><a href="#" class="list__link">Feature</a></li>
+          <li><a href="#" class="list__link">Pricing</a></li>
+          <li><a href="#" class="list__link">Resources</a></li>
+        </ul>
+        <ul class="nav__list">
+          <li><a href="#" class="list__link">Login</a></li>
+          <li><a href="#" class="list__link button--cyan">Sign Up</a></li>
+        </ul>
+      </nav>
+    </nav>
 
-  Features
-  Pricing
-  Resources
+    <div>
+      <img src="assets/images/illustration-working.svg" alt="Illustration-working" class="header__illustration">
+      <h1 class="header__title">More than just shorter links</h1>
+      <p class="header__paragraph">Build your brand’s recognition and get detailed insights 
+        on how your links are performing.
+      </p>
+      <a href="#" class="button--cyan">Get Started</a>
+    </div>
+  </header>
 
-  Login
-  Sign Up
+  <main>
+    <section class="section-shorten">
+      <div class="shortener">
+        <div>
+          <input type="url" id="url" placeholder="Shorten a link here..." class="shortener__input">
+          <span class="shortener__message-error">Please add a link</span>
+        </div>
+        <button class="button--cyan">Shorten It!</button>
+      </div>
 
-  More than just shorter links
+      <div class="links">
+        <span class="links__normal">https://www.frontendmentor.io</span>
+        <span class="links__shortened">https://reLink/k4lKyk</span>
+        <button class="button--cyan">Copy</button>
+      </div>
+    </section>
 
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
+    <section class="advanced">
+      <div>
+        <h2 class="advanced__title">Advanced Statistics</h2>
+        <p class="advanced__paragraph">Track how your links are performing across the web with our 
+          advanced statistics dashboard.</p>
+      </div>
 
-  Get Started
-  
-  Shorten a link here...
+      <div class="advanced__cards">
+        <div class="advanced__card">
+          <img src="assets/images/icon-brand-recognition.svg" alt="icon-brand-recognition">
+          <h3>Brand Recognition</h3>
+          <p>Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
 
-  Shorten It!
+        <div class="advanced__card">
+          <img src="assets/images/icon-detailed-records.svg" alt="icon-detailed-records">
+          <h3>Detailed Records</h3>
+          <p>Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.</p>
+        </div>
 
-  Advanced Statistics
+        <div class="advanced__card">
+          <img src="assets/images/icon-fully-customizable.svg" alt="icon-fully-customizable">
+          <h3>Fully Customizable</h3>
+          <p>Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.</p>
+        </div>
+      </div>
+    </section>
 
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
+    <section class="call-to-action">
+      <h2>Boost your links today</h2>
+      <button class="button--cyan">Get Started</button>
+    </section>
+  </main>
 
-  Brand Recognition
+  <footer>
+    <a href="#"><img src="assets/images/logo.svg" alt="Logo Shortly"></a>
+    <div class="container-links">
+      <h4>Features</h4>
+      <ul>
+        <li><a href="#">Link Shortening</a></li>
+        <li><a href="#">Branded Links</a></li>
+        <li><a href="#">Analytics</a></li>
+      </ul>
+    </div>
 
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
+    <div class="container-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
 
-  Detailed Records
+    <div class="container-links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
 
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="container-nets">
+      <ul>
+        <li><img src="assets/images/icon-facebook.svg" alt="Icon Facebook"></li>
+        <li><img src="assets/images/icon-twitter.svg" alt="Icon Twitter"></li>
+        <li><img src="assets/images/icon-pinterest.svg" alt="Icon Pinterest"></li>
+        <li><img src="assets/images/icon-instagram.svg" alt="Icon Instagram"></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
