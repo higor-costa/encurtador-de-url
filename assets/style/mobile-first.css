@@ -39,3 +39,44 @@ header .nav-container {
   margin-bottom: 15px;
 }
 
+.nav-container #nav__icon-menu {
+  display: none;
+}
+
+.nav-container label {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-container label::before, 
+.nav-container label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Gray);
+  transition: all .3s ease-in-out;
+}
+
+.nav-container label::before {
+  top: 0;
+  box-shadow: 0 10px 0 var(--Gray);
+}
+
+.nav-container label::after {
+  top: 20px;
+}
+
+#nav__icon-menu:checked + label::before {
+  box-shadow: none;
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+#nav__icon-menu:checked + label::after {
+  transform: rotate(45deg);
+  top: 10px;
+}
