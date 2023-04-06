@@ -30,3 +30,12 @@
 body {
   font-family: var(--family-poppins);
 }
+
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 25px 0px;
+  margin-bottom: 15px;
+}
+
