@@ -26,3 +26,7 @@
   /* fontes */
   --family-poppins: 'Poppins', sans-serif;
 }
+
+body {
+  font-family: var(--family-poppins);
+}
