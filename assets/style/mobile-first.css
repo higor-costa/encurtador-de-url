@@ -31,6 +31,7 @@ body {
   font-family: var(--family-poppins);
 }
 
+/* HEADER */
 header .nav-container {
   display: flex;
   justify-content: space-between;
@@ -39,6 +40,7 @@ header .nav-container {
   margin-bottom: 15px;
 }
 
+/* HEADER: icon menu hamburguer */
 .nav-container #nav__icon-menu {
   display: none;
 }
@@ -80,3 +82,5 @@ header .nav-container {
   transform: rotate(45deg);
   top: 10px;
 }
+
+/* HEADER: menu items */
