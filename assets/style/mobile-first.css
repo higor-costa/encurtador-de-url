@@ -84,3 +84,16 @@ header .nav-container {
 }
 
 /* HEADER: menu items */
+.nav-container .nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  border-radius: 10px;
+  position: absolute;
+  top: 95px;
+  width: calc(100% - 3rem);
+  padding: 40px 20px;
+  background: var(--Dark-Violet);
+}
