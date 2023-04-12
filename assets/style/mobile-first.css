@@ -104,3 +104,9 @@ header .nav-container {
   height: 1px;
   background-color: var(--Grayish-Violet);
 }
+
+.nav-items .nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
