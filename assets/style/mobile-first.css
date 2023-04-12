@@ -133,4 +133,5 @@ header .nav-container {
   background: var(--Cyan);
   padding: 15px 0;
   border-radius: 30px;
+  cursor: pointer;
 }
