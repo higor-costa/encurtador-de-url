@@ -122,3 +122,7 @@ header .nav-container {
 .nav-items .list__link {
   color: white;
 }
+
+.nav__list .button--cyan {
+  width: 100%;
+}
