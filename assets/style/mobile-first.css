@@ -89,7 +89,7 @@ header .nav-container {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
+  gap: 40px;
   border-radius: 10px;
   position: absolute;
   top: 95px;
