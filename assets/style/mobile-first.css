@@ -121,6 +121,8 @@ header .nav-container {
 
 .nav__list .list__link {
   color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .nav__list .button--cyan {
