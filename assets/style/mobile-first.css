@@ -85,7 +85,7 @@ header .nav-container {
 
 /* HEADER: menu items */
 .nav-container .nav-items {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
