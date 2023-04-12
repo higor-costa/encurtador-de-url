@@ -97,3 +97,10 @@ header .nav-container {
   padding: 40px 20px;
   background: var(--Dark-Violet);
 }
+
+.nav-items .nav__divisor {
+  content: '';
+  width: 95%;
+  height: 1px;
+  background-color: var(--Grayish-Violet);
+}
