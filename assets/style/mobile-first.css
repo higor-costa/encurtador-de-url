@@ -111,3 +111,7 @@ header .nav-container {
   align-items: center;
   gap: 30px;
 }
+
+.nav-items .list__link {
+  color: white;
+}
