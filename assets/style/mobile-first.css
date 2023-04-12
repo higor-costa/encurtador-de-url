@@ -126,3 +126,9 @@ header .nav-container {
 .nav__list .button--cyan {
   width: 100%;
 }
+
+.button--cyan {
+  background: var(--Cyan);
+  padding: 15px 0;
+  border-radius: 30px;
+}
