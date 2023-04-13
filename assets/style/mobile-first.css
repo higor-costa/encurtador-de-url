@@ -32,6 +32,10 @@ body {
 }
 
 /* HEADER */
+header {
+  padding: 40px 0 200px;
+}
+
 header .nav-container {
   display: flex;
   justify-content: space-between;
