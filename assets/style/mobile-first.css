@@ -156,4 +156,5 @@ header .nav-container {
 .container-main .header__paragraph {
   font-size: 1.2rem;
   color: var(--Grayish-Violet);
+  margin-bottom: 35px;
 }
