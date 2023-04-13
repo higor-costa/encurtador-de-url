@@ -140,4 +140,5 @@ header .nav-container {
 .container-main {
   padding: 0 25px;
   overflow: hidden;
+  text-align: center;
 }
