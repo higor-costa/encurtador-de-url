@@ -152,3 +152,7 @@ header .nav-container {
   line-height: 1.2;
   margin: 40px 0 20px 0;
 }
+
+.container-main .header__paragraph {
+  font-size: 1.2rem;
+}
