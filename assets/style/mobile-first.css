@@ -139,4 +139,5 @@ header .nav-container {
 /* HEADER: image, title, paragraph e button */
 .container-main {
   padding: 0 25px;
+  overflow: hidden;
 }
