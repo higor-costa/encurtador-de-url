@@ -162,4 +162,5 @@ header .nav-container {
 .container-main .button--cyan {
   display: block;
   width: 60%;
+  margin: 0 auto;
 }
