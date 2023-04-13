@@ -142,3 +142,7 @@ header .nav-container {
   overflow: hidden;
   text-align: center;
 }
+
+.container-main .header__illustration {
+  width: 35rem;
+}
