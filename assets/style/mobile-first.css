@@ -247,3 +247,7 @@ div .shortener__input:invalid .shortener__message-error {
   background-color: white;
   border-radius: 10px;
 }
+
+.links .links__normal {
+  padding: 15px;
+}
