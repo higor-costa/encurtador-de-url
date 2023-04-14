@@ -215,4 +215,5 @@ div .shortener__input {
   font-size: 1.1rem;
   color: var(--Grayish-Violet);
   padding: 20px;
+  border-radius: 8px;
 }
