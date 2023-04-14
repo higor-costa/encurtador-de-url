@@ -273,3 +273,7 @@ div .shortener__input:invalid .shortener__message-error {
   display: block;
   text-align: start;
 }
+
+.links div .links__shortened {
+  color: var(--Cyan);
+}
