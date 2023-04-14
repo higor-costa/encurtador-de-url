@@ -194,3 +194,8 @@ main .section-shorten {
   flex-direction: column;
   gap: 20px;
 }
+
+.shortener .button--cyan {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
