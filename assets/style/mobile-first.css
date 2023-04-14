@@ -202,4 +202,5 @@ main .section-shorten {
   border: none;
   color: white;
   padding: 20px;
+  cursor: pointer;
 }
