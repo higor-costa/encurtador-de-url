@@ -210,3 +210,7 @@ main .section-shorten {
   flex-direction: column;
   gap: 5px;
 }
+
+div .shortener__input {
+  font-size: 1.1rem;
+}
