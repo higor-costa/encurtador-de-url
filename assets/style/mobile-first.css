@@ -204,3 +204,8 @@ main .section-shorten {
   padding: 20px;
   cursor: pointer;
 }
+
+.shortener div {
+  display: flex;
+  flex-direction: column;
+}
