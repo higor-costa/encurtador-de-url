@@ -231,4 +231,5 @@ div .shortener__message-error {
   font-style: italic;
   color: var(--Red);
   display: none;
+  align-self: flex-start;
 }
