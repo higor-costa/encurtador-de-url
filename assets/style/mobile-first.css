@@ -253,3 +253,7 @@ div .shortener__input:invalid .shortener__message-error {
   border-bottom: 1px solid var(--Gray);
   color: var(--Very-Dark-Violet);
 }
+
+.links div {
+  padding: 15px;
+}
