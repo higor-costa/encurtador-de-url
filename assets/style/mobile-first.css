@@ -178,3 +178,7 @@ main {
   text-align: center;
   padding: 0 25px;
 }
+
+main .section-shorten {
+  position: relative;
+}
