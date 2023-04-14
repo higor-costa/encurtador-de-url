@@ -171,3 +171,8 @@ header .nav-container {
   font-size: 1.2rem;
   font-weight: 700;
 }
+
+/* MAIN  */
+main {
+  background-color: var(--Gray);
+}
