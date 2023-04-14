@@ -198,4 +198,6 @@ main .section-shorten {
 .shortener .button--cyan {
   font-size: 1.1rem;
   font-weight: 700;
+  border-radius: 8px;
+  border: none;
 }
