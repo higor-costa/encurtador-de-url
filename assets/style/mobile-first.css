@@ -233,3 +233,7 @@ div .shortener__message-error {
   display: none;
   align-self: flex-start;
 }
+
+div .shortener__input:invalid .shortener__message-error {
+  display: flex;
+}
