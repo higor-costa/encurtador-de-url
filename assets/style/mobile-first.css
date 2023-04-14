@@ -185,6 +185,7 @@ main .section-shorten {
   top: -6.3rem;
   display: flex;
   flex-direction: column;
+  gap: 25px;
 }
 
 /* MAIN: Shortener */
