@@ -182,6 +182,7 @@ main {
 
 main .section-shorten {
   position: relative;
+  top: -6.3rem;
 }
 
 /* MAIN: Shortener */
