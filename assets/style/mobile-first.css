@@ -230,4 +230,5 @@ div .shortener__message-error {
   font-size: .8rem;
   font-style: italic;
   color: var(--Red);
+  display: none;
 }
