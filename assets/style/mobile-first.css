@@ -186,8 +186,6 @@ main .section-shorten {
 
 /* MAIN: Shortener */
 .section-shorten .shortener {
-  position: absolute;
-  top: -6.3rem;
   width: 100%;
   background: var(--Dark-Violet) url('../images/bg-shorten-mobile.svg') no-repeat top right;
   border-radius: 10px;
