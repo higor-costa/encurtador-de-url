@@ -225,3 +225,9 @@ div .shortener__input:invalid {
 div .shortener__input:invalid::placeholder {
   color: var(red);
 }
+
+div .shortener__message-error {
+  font-size: .8rem;
+  font-style: italic;
+  color: var(--Red);
+}
