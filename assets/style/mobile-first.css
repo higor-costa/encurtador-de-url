@@ -186,4 +186,5 @@ main .section-shorten {
 .section-shorten .shortener {
   position: absolute;
   top: -6.3rem;
+  width: 100%;
 }
