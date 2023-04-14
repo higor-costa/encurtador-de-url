@@ -217,3 +217,7 @@ div .shortener__input {
   padding: 20px;
   border-radius: 8px;
 }
+
+div .shortener__input:invalid {
+  border: 3px solid var(--Red);
+}
