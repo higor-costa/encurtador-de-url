@@ -221,3 +221,7 @@ div .shortener__input {
 div .shortener__input:invalid {
   border: 3px solid var(--Red);
 }
+
+div .shortener__input:invalid::placeholder {
+  color: var(red);
+}
