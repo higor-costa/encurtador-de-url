@@ -175,4 +175,5 @@ header .nav-container {
 /* MAIN  */
 main {
   background-color: var(--Gray);
+  text-align: center;
 }
