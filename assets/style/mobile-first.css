@@ -183,6 +183,7 @@ main .section-shorten {
   position: relative;
 }
 
+/* MAIN: Shortener */
 .section-shorten .shortener {
   position: absolute;
   top: -6.3rem;
@@ -237,3 +238,5 @@ div .shortener__message-error {
 div .shortener__input:invalid .shortener__message-error {
   display: flex;
 }
+
+/* MAIN: Shortener links */
