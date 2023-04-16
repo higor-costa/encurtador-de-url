@@ -356,3 +356,9 @@ main .call-to-action {
   color: white;
   margin-bottom: 15px;
 }
+
+.call-to-action .button--cyan {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
