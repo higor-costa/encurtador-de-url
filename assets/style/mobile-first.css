@@ -179,6 +179,10 @@ main {
   position: relative;
 }
 
+main section:not(.call-to-action) {
+  padding: 0 25px;
+}
+
 main .section-shorten {
   position: relative;
   top: -6.3rem;
