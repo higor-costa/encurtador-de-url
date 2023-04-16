@@ -289,3 +289,7 @@ div .shortener__input:invalid .shortener__message-error {
   font-size: 1.2rem;
   line-height: 2;
 }
+
+.advanced .advanced__cards {
+  margin: 100px 0;
+}
