@@ -277,3 +277,5 @@ div .shortener__input:invalid .shortener__message-error {
 .links div .links__shortened {
   color: var(--Cyan);
 }
+
+/* MAIN: advanced */
