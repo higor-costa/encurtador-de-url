@@ -328,5 +328,6 @@ div .shortener__input:invalid .shortener__message-error {
   left: 50%;
   bottom: 85%;
   background-color: var(--Dark-Violet);
+  border-radius: 50%;
   transform: translateX(-50%);
 }
