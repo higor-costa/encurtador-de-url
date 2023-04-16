@@ -287,4 +287,5 @@ div .shortener__input:invalid .shortener__message-error {
 
 .advanced .advanced__paragraph {
   font-size: 1.2rem;
+  line-height: 2;
 }
