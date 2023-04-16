@@ -363,4 +363,5 @@ main .call-to-action {
   color: white;
   width: 50%;
   border: none;
+  cursor: pointer;
 }
