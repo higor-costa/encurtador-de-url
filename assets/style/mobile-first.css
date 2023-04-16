@@ -336,4 +336,5 @@ div .shortener__input:invalid .shortener__message-error {
 .advanced__card h3 {
   font-size: 1.5rem;
   color: var(--Dark-Violet);
+  margin: 50px 0 20px;
 }
