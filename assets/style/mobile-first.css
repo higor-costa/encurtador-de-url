@@ -350,3 +350,8 @@ main .call-to-action {
   background-size: cover;
   padding: 100px 25px;
 }
+
+.call-to-action h2 {
+  font-size: 1.8rem;
+  color: white;
+}
