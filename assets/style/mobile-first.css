@@ -292,6 +292,8 @@ div .shortener__input:invalid .shortener__message-error {
 
 .advanced .advanced__cards {
   margin: 100px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .advanced__cards .advanced__card {
