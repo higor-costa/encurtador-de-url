@@ -297,4 +297,5 @@ div .shortener__input:invalid .shortener__message-error {
 .advanced__cards .advanced__card {
   position: relative;
   background-color: white;
+  padding: 30px;
 }
