@@ -387,7 +387,6 @@ footer  .logo {
 
 footer .container-links {
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .container-links h4 {
@@ -408,6 +407,7 @@ footer .container-links {
 
 .container-nets ul {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
