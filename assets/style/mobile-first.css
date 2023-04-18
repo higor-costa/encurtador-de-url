@@ -378,3 +378,9 @@ footer {
   gap: 80px;
   padding: 50px 0;
 }
+
+footer  .logo {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+} 
