@@ -394,3 +394,8 @@ footer .container-links {
   color: white;
   margin-bottom: 30px;
 }
+
+.container-links ul {
+  display: flex;
+  flex-direction: column;
+}
