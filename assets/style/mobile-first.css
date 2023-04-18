@@ -412,4 +412,5 @@ footer .container-links {
 
 .container-nets img {
   width: 2rem;
+  cursor: pointer;
 }
