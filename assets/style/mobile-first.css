@@ -404,3 +404,8 @@ footer .container-links {
 .container-links a {
   color: var(--Grayish-Violet);
 }
+
+.container-nets ul {
+  display: flex;
+  gap: 30px;
+}
