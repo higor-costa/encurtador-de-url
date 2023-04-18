@@ -370,3 +370,8 @@ main .call-to-action {
 }
 
 /* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
