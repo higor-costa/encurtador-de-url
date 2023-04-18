@@ -329,7 +329,7 @@ div .shortener__input:invalid .shortener__message-error {
 .advanced__card img {
   position: absolute;
   left: 50%;
-  bottom: 85%;
+  bottom: calc(100% - 2.5rem);
   background-color: var(--Dark-Violet);
   border-radius: 50%;
   padding: 20px;
