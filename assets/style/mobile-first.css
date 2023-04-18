@@ -376,4 +376,5 @@ footer {
   align-items: center;
   background-color: var(--Very-Dark-Violet);
   gap: 80px;
+  padding: 50px 0;
 }
