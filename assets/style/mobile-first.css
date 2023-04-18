@@ -375,4 +375,5 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: var(--Very-Dark-Violet);
+  gap: 80px;
 }
