@@ -6,18 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>URL Shortener</title>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/style/mobile-first.css">
 </head>
 <body>
   <header>
     <nav class="nav-container">
       <a href="#"><img src="assets/images/logo.svg" alt="Logo Shortly" class="nav__logo"></a>
       <input type="checkbox" id="nav__icon-menu">
+      <label for="nav__icon-menu"></label>
       <nav class="nav-items">
         <ul class="nav__list">
           <li><a href="#" class="list__link">Feature</a></li>
           <li><a href="#" class="list__link">Pricing</a></li>
           <li><a href="#" class="list__link">Resources</a></li>
         </ul>
+        <span class="nav__divisor"></span>
         <ul class="nav__list">
           <li><a href="#" class="list__link">Login</a></li>
           <li><a href="#" class="list__link button--cyan">Sign Up</a></li>
@@ -25,7 +28,7 @@
       </nav>
     </nav>
 
-    <div>
+    <div class="container-main">
       <img src="assets/images/illustration-working.svg" alt="Illustration-working" class="header__illustration">
       <h1 class="header__title">More than just shorter links</h1>
       <p class="header__paragraph">Build your brand’s recognition and get detailed insights 
@@ -47,8 +50,10 @@
 
       <div class="links">
         <span class="links__normal">https://www.frontendmentor.io</span>
-        <span class="links__shortened">https://reLink/k4lKyk</span>
-        <button class="button--cyan">Copy</button>
+        <div>
+          <span class="links__shortened">https://reLink/k4lKyk</span>
+          <button class="button--cyan">Copy</button>
+        </div>
       </div>
     </section>
 
@@ -90,42 +95,41 @@
   </main>
 
   <footer>
-    <a href="#"><img src="assets/images/logo.svg" alt="Logo Shortly"></a>
-    <div class="container-links">
-      <h4>Features</h4>
-      <ul>
-        <li><a href="#">Link Shortening</a></li>
-        <li><a href="#">Branded Links</a></li>
-        <li><a href="#">Analytics</a></li>
-      </ul>
-    </div>
-
-    <div class="container-links">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Developers</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-    </div>
-
-    <div class="container-links">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="container-nets">
-      <ul>
-        <li><img src="assets/images/icon-facebook.svg" alt="Icon Facebook"></li>
-        <li><img src="assets/images/icon-twitter.svg" alt="Icon Twitter"></li>
-        <li><img src="assets/images/icon-pinterest.svg" alt="Icon Pinterest"></li>
-        <li><img src="assets/images/icon-instagram.svg" alt="Icon Instagram"></li>
-      </ul>
+    <a href="#" class="logo">Shortly</a>
+    <div class="links-footer">
+      <div class="container-links">
+        <h4>Features</h4>
+        <ul>
+          <li><a href="#">Link Shortening</a></li>
+          <li><a href="#">Branded Links</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+      </div>
+      <div class="container-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="container-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="container-nets">
+        <ul>
+          <li><img src="assets/images/icon-facebook.svg" alt="Icon Facebook"></li>
+          <li><img src="assets/images/icon-twitter.svg" alt="Icon Twitter"></li>
+          <li><img src="assets/images/icon-pinterest.svg" alt="Icon Pinterest"></li>
+          <li><img src="assets/images/icon-instagram.svg" alt="Icon Instagram"></li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
