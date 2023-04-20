@@ -152,6 +152,7 @@ header .nav-container {
 
 .container-main .header__illustration {
   width: 155%;
+  align-self: flex-start;
 }
 
 .container-main .header__title {
