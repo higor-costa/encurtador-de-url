@@ -1,5 +1,6 @@
 @media screen and (min-width: 570px){
   .container-main .header__illustration {
     width: 80%;
+    align-self: auto;
   }
 }
