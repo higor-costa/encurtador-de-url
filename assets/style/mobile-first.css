@@ -145,6 +145,9 @@ header .nav-container {
   padding: 0 25px;
   overflow: hidden;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-main .header__illustration {
