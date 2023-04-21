@@ -13,4 +13,8 @@
     justify-content: space-around;
     gap: 70px;
   }
+
+  footer .container-links {
+    margin-bottom: 0px;
+  }
 }
