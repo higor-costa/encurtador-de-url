@@ -43,6 +43,11 @@
     width: max-content;
   }
 
+  .nav__list .button--cyan {
+    padding: 7px 20px;
+    color: white;
+  }
+
   footer .links-footer {
     width: 100%;
     padding: 0 25px;
