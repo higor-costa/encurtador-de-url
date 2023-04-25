@@ -36,6 +36,11 @@
     display: none;  
   }
 
+  .nav__list .list__link {
+    font-size: .9rem;
+    color: var(--Gray);
+  }
+
   footer .links-footer {
     width: 100%;
     padding: 0 25px;
