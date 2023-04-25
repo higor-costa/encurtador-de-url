@@ -32,6 +32,10 @@
     width: auto;
   }
 
+  .nav-items .nav__divisor {
+    display: none;  
+  }
+
   footer .links-footer {
     width: 100%;
     padding: 0 25px;
