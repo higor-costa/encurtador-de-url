@@ -39,6 +39,8 @@
   .nav__list .list__link {
     font-size: .9rem;
     color: var(--Gray);
+    display: inline-block;
+    width: max-content;
   }
 
   footer .links-footer {
