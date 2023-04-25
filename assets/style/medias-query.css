@@ -29,6 +29,7 @@
   .nav-items .nav__list {
     flex-direction: row;
     align-items: flex-start;
+    width: auto;
   }
 
   footer .links-footer {
