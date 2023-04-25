@@ -21,6 +21,7 @@
     gap: 0;
     border-radius: 0;
     position: initial;
+    width: 100%;
   }
 
   footer .links-footer {
