@@ -10,6 +10,10 @@
     gap: 40px;
   }
 
+  .nav-container label {
+    display: none;
+  }
+
   footer .links-footer {
     width: 100%;
     padding: 0 25px;
