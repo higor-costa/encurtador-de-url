@@ -52,6 +52,10 @@
     color: white;
   }
 
+  .container-main {
+    flex-direction: row-reverse;
+  }
+
   footer .links-footer {
     width: 100%;
     padding: 0 25px;
