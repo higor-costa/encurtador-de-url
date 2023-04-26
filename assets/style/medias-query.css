@@ -64,6 +64,10 @@
     margin: 0;
   }
 
+  .container-text .header__paragraph {
+    margin-bottom: 25px;
+  }
+
   footer .links-footer {
     width: 100%;
     padding: 0 25px;
