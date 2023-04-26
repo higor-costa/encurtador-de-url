@@ -58,6 +58,10 @@
     justify-content: space-between;
   }
 
+  .container-main .container-illustration {
+    position: relative;
+  }
+
   .container-main .container-text {
     text-align: start;
   }
