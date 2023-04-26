@@ -67,6 +67,9 @@
   .container-illustration .header__illustration {
     width: 140%;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
   }
 
   .container-main .container-text {
