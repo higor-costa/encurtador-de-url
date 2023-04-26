@@ -68,6 +68,14 @@
     margin-bottom: 25px;
   }
 
+  .container-main .button--cyan {
+    font-size: .9rem;
+    text-align: center;
+    margin: 0;
+    width: 9rem;
+    padding: 10px 0;
+  }
+
   footer .links-footer {
     width: 100%;
     padding: 0 25px;
