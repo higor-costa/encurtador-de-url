@@ -66,6 +66,7 @@
 
   .container-illustration .header__illustration {
     width: 140%;
+    position: absolute;
   }
 
   .container-main .container-text {
