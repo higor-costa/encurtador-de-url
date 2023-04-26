@@ -60,6 +60,8 @@
 
   .container-main .container-illustration {
     position: relative;
+    width: 350px;
+    height: 22rem;
   }
 
   .container-main .container-text {
