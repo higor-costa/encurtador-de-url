@@ -96,6 +96,9 @@
   }
 
   /* MAIN: Shortener */
+  main .section-shorten {
+    top: -4rem;
+}
 
   /* FOOTER */
   footer .links-footer {
