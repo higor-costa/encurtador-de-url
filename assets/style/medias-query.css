@@ -122,6 +122,11 @@
     padding: 20px 30px;
   }
 
+  .links .links__normal {
+    padding: 0;
+    border-bottom: none;
+  }
+
   /* FOOTER */
   footer .links-footer {
     width: 100%;
