@@ -98,7 +98,11 @@
   /* MAIN: Shortener */
   main .section-shorten {
     top: -4rem;
-}
+  }
+
+  .section-shorten .shortener {
+    flex-direction: row
+  }
 
   /* FOOTER */
   footer .links-footer {
