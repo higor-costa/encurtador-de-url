@@ -127,6 +127,11 @@
     border-bottom: none;
   }
 
+  .links div {
+    display: flex;
+    align-items: center;
+  }
+
   /* FOOTER */
   footer .links-footer {
     width: 100%;
