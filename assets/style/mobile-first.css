@@ -145,19 +145,25 @@ header .nav-container {
   padding: 0 25px;
   overflow: hidden;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-main .header__illustration {
-  width: 35rem;
+  width: 155%;
+  align-self: flex-start;
 }
 
 .container-main .header__title {
+  width: 28rem;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 40px 0 20px 0;
 }
 
 .container-main .header__paragraph {
+  max-width: 30rem;
   font-size: 1.2rem;
   color: var(--Grayish-Violet);
   margin-bottom: 35px;
@@ -165,7 +171,7 @@ header .nav-container {
 
 .container-main .button--cyan {
   display: block;
-  width: 60%;
+  width: 13rem;
   margin: 0 auto;
   color: white;
   font-size: 1.2rem;
@@ -289,6 +295,8 @@ div .shortener__input:invalid .shortener__message-error {
 }
 
 .advanced .advanced__paragraph {
+  max-width: 33rem;
+  margin: 0 auto;
   font-size: 1.2rem;
   line-height: 2;
 }
@@ -364,7 +372,7 @@ main .call-to-action {
   font-size: 1.2rem;
   font-weight: 700;
   color: white;
-  width: 50%;
+  width: 13rem;
   border: none;
   cursor: pointer;
 }
