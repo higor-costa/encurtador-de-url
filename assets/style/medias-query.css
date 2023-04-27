@@ -110,7 +110,9 @@
 
   .shortener .button--cyan {
     width: 25%;
-}
+  }
+
+  /* MAIN: Shortener links */
 
   /* FOOTER */
   footer .links-footer {
