@@ -1,5 +1,9 @@
 @media screen and (min-width: 570px) and (max-width: 1023px){
   /* MAIN: advanced */
+  .advanced__cards .advanced__card {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 570px) and (max-width: 880px){
