@@ -134,6 +134,17 @@
     padding: 0;
   }
 
+  .links div .button--cyan {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 35px;
+    margin-top: 0;
+  }
+
   /* FOOTER */
   footer .links-footer {
     width: 100%;
