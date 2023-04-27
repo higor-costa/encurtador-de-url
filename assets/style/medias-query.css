@@ -104,6 +104,10 @@
     flex-direction: row
   }
 
+  .shortener div {
+    width: 75%;
+  }
+
   /* FOOTER */
   footer .links-footer {
     width: 100%;
