@@ -108,6 +108,10 @@
     width: 75%;
   }
 
+  .shortener .button--cyan {
+    width: 25%;
+}
+
   /* FOOTER */
   footer .links-footer {
     width: 100%;
