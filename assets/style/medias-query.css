@@ -184,4 +184,8 @@
   main section:not(.call-to-action) {
     padding: 0 8%;
   }
+
+  .section-shorten .shortener {
+    background-image: url('../images/bg-shorten-desktop.svg');
+  }
 }
