@@ -168,5 +168,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  
+  header {
+    padding-left: 8%;
+  }
 }
