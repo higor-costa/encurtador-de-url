@@ -200,6 +200,10 @@
     max-width: 19rem;
   }
 
+  .advanced__card h3 {
+    font-size: 1.1rem;
+  }
+
   main .call-to-action {
     background-image: url('../images/bg-boost-desktop.svg');
   }
