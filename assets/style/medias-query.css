@@ -197,4 +197,8 @@
     padding-left: 8%;
     padding-right: 8%;
   }
+
+  footer .container-links {
+    text-align: left;
+  }
 }
