@@ -188,4 +188,9 @@
   .section-shorten .shortener {
     background-image: url('../images/bg-shorten-desktop.svg');
   }
+
+  footer {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
