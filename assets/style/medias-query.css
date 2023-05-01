@@ -196,6 +196,10 @@
     gap: 40px;
   }
 
+  .advanced__card {
+    max-width: 19rem;
+  }
+
   main .call-to-action {
     background-image: url('../images/bg-boost-desktop.svg');
   }
