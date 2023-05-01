@@ -171,4 +171,8 @@
   header {
     padding-left: 8%;
   }
+
+  header .nav-container {
+    margin-right: 8%;
+  }
 }
