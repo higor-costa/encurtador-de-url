@@ -180,4 +180,8 @@
   header .container-main {
     padding: 0;
   }
+
+  main section:not(.call-to-action) {
+    padding: 0 8%;
+  }
 }
