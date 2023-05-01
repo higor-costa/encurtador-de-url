@@ -205,6 +205,10 @@
     margin: 30px 0 10px;
   }
 
+  .advanced__card p {
+    font-size: 0.8rem;
+}
+
   main .call-to-action {
     background-image: url('../images/bg-boost-desktop.svg');
   }
