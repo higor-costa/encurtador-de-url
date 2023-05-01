@@ -189,6 +189,12 @@
     background-image: url('../images/bg-shorten-desktop.svg');
   }
 
+  .advanced .advanced__cards {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
   main .call-to-action {
     background-image: url('../images/bg-boost-desktop.svg');
   }
