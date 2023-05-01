@@ -175,4 +175,9 @@
   header .nav-container {
     margin-right: 8%;
   }
+
+  header .nav-container,
+  header .container-main {
+    padding: 0;
+  }
 }
