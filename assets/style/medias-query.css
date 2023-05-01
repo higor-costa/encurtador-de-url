@@ -189,6 +189,10 @@
     background-image: url('../images/bg-shorten-desktop.svg');
   }
 
+  main .call-to-action {
+    background-image: url('../images/bg-boost-desktop.svg');
+  }
+
   footer {
     padding-left: 8%;
     padding-right: 8%;
