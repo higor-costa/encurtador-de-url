@@ -218,6 +218,10 @@
     left: calc(100% + 1rem);
   }
 
+  .advanced__card img {
+    bottom: calc(100% - 2.1rem);
+  }
+
   .advanced__card:nth-child(3) {
     margin-top: 80px;
   }
