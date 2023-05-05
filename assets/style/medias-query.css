@@ -71,7 +71,7 @@
 
   .container-main .container-illustration {
     position: relative;
-    width: 350px;
+    width: 22rem;
     height: 22rem;
   }
 
@@ -260,6 +260,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .container-main .container-illustration {
+    width: 27rem;
+    height: 26rem;
+  }
+
   .advanced__card img {
     left: 21%;
     bottom: calc(100% - 2.1rem);
