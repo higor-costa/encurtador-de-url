@@ -256,5 +256,6 @@
     left: 21%;
     bottom: calc(100% - 2.1rem);
     width: 4rem;
+    padding: 15px;
   }
 }
