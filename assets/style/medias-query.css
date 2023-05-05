@@ -204,6 +204,20 @@
     margin-top: 40px;
   }
 
+  .advanced__card:nth-child(2)::before, 
+  .advanced__card:nth-child(2)::after {
+    height: 40px;
+    bottom: 50%;
+    left: -25px;
+    transform: rotateZ(90deg);
+  }
+
+  .advanced__card:nth-child(2)::after {
+    height: 41px;
+    top: auto;
+    left: calc(100% + 1rem);
+  }
+
   .advanced__card:nth-child(3) {
     margin-top: 80px;
   }
