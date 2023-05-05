@@ -252,5 +252,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  
+  .advanced__card img {
+    left: 21%;
+    bottom: calc(100% - 2.1rem);
+  }
 }
