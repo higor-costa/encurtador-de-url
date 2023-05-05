@@ -185,6 +185,10 @@
     left: -2rem;
   }
 
+  .container-main .header__title {
+    font-size: 3.5rem;
+  }
+
   main section:not(.call-to-action) {
     padding: 0 8%;
   }
