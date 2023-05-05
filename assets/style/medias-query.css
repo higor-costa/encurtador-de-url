@@ -181,6 +181,10 @@
     padding: 0;
   }
 
+  .container-main .header__illustration {
+    left: -2rem;
+  }
+
   main section:not(.call-to-action) {
     padding: 0 8%;
   }
