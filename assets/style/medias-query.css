@@ -267,4 +267,8 @@
     flex-direction: row;
     align-items: flex-start;
   }
+  
+  footer .links-footer {
+    justify-content: flex-end;
+  }
 }
