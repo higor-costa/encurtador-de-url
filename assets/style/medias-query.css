@@ -270,5 +270,6 @@
   
   footer .links-footer {
     justify-content: flex-end;
+    padding: 0;
   }
 }
