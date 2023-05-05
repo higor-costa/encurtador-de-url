@@ -258,4 +258,8 @@
     width: 4rem;
     padding: 15px;
   }
+
+  .advanced__card {
+    text-align: left;
+  }
 }
