@@ -221,6 +221,7 @@
   .advanced__card img {
     bottom: calc(100% - 2.1rem);
     width: 4rem;
+    padding: 15px;
   }
 
   .advanced__card:nth-child(3) {
