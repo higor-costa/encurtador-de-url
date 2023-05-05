@@ -262,4 +262,9 @@
   .advanced__card {
     text-align: left;
   }
+
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
