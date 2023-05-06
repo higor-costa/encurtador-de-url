@@ -31,7 +31,6 @@
   .nav-container .nav-items {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     gap: 0;
     border-radius: 0;
     position: initial;
@@ -42,7 +41,6 @@
 
   .nav-items .nav__list {
     flex-direction: row;
-    align-items: flex-start;
     width: auto;
   }
 
