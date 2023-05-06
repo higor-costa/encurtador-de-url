@@ -156,7 +156,7 @@ header .nav-container {
 }
 
 .container-main .header__title {
-  width: 28rem;
+  max-width: 36rem;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 40px 0 20px 0;
