@@ -145,6 +145,10 @@ header .nav-container {
   border-radius: 30px;
 }
 
+.button--cyan:hover {
+  background: hsl(180deg 66% 49% / 58%);
+}
+
 /* HEADER: image, title, paragraph e button */
 .container-main {
   padding: 0 25px;
