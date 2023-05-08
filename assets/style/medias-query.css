@@ -90,7 +90,7 @@
   }
 
   .container-text .header__paragraph {
-    margin-bottom: 25px;
+    margin: 0 0 25px;
   }
 
   .container-main .button--cyan {
