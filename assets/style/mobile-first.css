@@ -129,6 +129,10 @@ header .nav-container {
   font-size: 1.1rem;
 }
 
+.nav__list .list__link:hover:not(.button--cyan) {
+  color: var(--Cyan);
+}
+
 .nav__list .button--cyan {
   width: 100%;
   cursor: pointer;
