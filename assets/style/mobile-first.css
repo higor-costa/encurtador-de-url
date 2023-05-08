@@ -424,6 +424,10 @@ footer .container-links {
   color: var(--Grayish-Violet);
 }
 
+.container-links a:hover {
+  color: var(--Cyan);
+}
+
 .container-nets ul {
   display: flex;
   align-items: center;
