@@ -127,6 +127,7 @@ header .nav-container {
   color: white;
   font-weight: 700;
   font-size: 1.1rem;
+  transition: .5s;
 }
 
 .nav__list .list__link:hover:not(.button--cyan) {
