@@ -422,6 +422,7 @@ footer .container-links {
 
 .container-links a {
   color: var(--Grayish-Violet);
+  transition: .5s;
 }
 
 .container-links a:hover {
