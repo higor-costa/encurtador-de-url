@@ -63,13 +63,13 @@ header .nav-container {
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--Gray);
+  background: var(--Grayish-Violet);
   transition: all .3s ease-in-out;
 }
 
 .nav-container label::before {
   top: 0;
-  box-shadow: 0 10px 0 var(--Gray);
+  box-shadow: 0 10px 0 var(--Grayish-Violet);
 }
 
 .nav-container label::after {
