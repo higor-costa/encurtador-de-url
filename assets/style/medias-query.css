@@ -50,7 +50,7 @@
 
   .nav__list .list__link {
     font-size: .9rem;
-    color: var(--Gray);
+    color: var(--Grayish-Violet);
     display: inline-block;
     width: max-content;
   }
