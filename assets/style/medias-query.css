@@ -55,6 +55,10 @@
     width: max-content;
   }
 
+  .nav__list .list__link:hover:not(.button--cyan) {
+    color: var(--Very-Dark-Violet);
+  }
+
   .nav__list .button--cyan {
     padding: 7px 20px;
     color: white;
