@@ -143,6 +143,7 @@ header .nav-container {
   background: var(--Cyan);
   padding: 15px 0;
   border-radius: 30px;
+  transition: background .5s;
 }
 
 .button--cyan:hover {
