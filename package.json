@@ -4,7 +4,8 @@
   "description": "![Visualização do design para o desafio de codificação da API de encurtamento de URL do Shortly](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",

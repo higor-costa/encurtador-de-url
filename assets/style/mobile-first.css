@@ -18,7 +18,7 @@
   --Red: hsl(0, 87%, 67%);
 
   /* Neutra */
-  --Gray: hsl(0, 0%, 75%);
+  --Gray: hsl(225, 33%, 95%);
   --Grayish-Violet: hsl(257, 7%, 63%);
   --Very-Dark-Blue: hsl(255, 11%, 22%);
   --Very-Dark-Violet: hsl(260, 8%, 14%);
@@ -63,13 +63,13 @@ header .nav-container {
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--Gray);
+  background: var(--Grayish-Violet);
   transition: all .3s ease-in-out;
 }
 
 .nav-container label::before {
   top: 0;
-  box-shadow: 0 10px 0 var(--Gray);
+  box-shadow: 0 10px 0 var(--Grayish-Violet);
 }
 
 .nav-container label::after {
@@ -127,17 +127,27 @@ header .nav-container {
   color: white;
   font-weight: 700;
   font-size: 1.1rem;
+  transition: .5s;
+}
+
+.nav__list .list__link:hover:not(.button--cyan) {
+  color: var(--Cyan);
 }
 
 .nav__list .button--cyan {
   width: 100%;
-  cursor: pointer;
 }
 
 .button--cyan {
   background: var(--Cyan);
   padding: 15px 0;
   border-radius: 30px;
+  cursor: pointer;
+  transition: background .5s;
+}
+
+.button--cyan:hover {
+  background: hsl(180deg 66% 49% / 58%);
 }
 
 /* HEADER: image, title, paragraph e button */
@@ -156,7 +166,7 @@ header .nav-container {
 }
 
 .container-main .header__title {
-  width: 28rem;
+  max-width: 36rem;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 40px 0 20px 0;
@@ -166,7 +176,7 @@ header .nav-container {
   max-width: 30rem;
   font-size: 1.2rem;
   color: var(--Grayish-Violet);
-  margin-bottom: 35px;
+  margin: auto auto 35px;
 }
 
 .container-main .button--cyan {
@@ -228,6 +238,7 @@ div .shortener__input {
   font-size: 1.1rem;
   color: var(--Grayish-Violet);
   padding: 20px;
+  border: none;
   border-radius: 8px;
 }
 
@@ -412,6 +423,11 @@ footer .container-links {
 
 .container-links a {
   color: var(--Grayish-Violet);
+  transition: .5s;
+}
+
+.container-links a:hover {
+  color: var(--Cyan);
 }
 
 .container-nets ul {
