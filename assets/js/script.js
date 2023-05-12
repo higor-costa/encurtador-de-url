@@ -6,6 +6,8 @@ const shortenButton = document.querySelector('#shortenButton');
 function copyUrl({ target }) {
   const copyButton = target;
   const shortUrl = copyButton.previousElementSibling.innerText;
+
+  navigator.clipboard.writeText(shortUrl);
 }
 
 function createResult(shortLink, originalLink) {
