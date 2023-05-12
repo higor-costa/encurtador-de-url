@@ -22,3 +22,5 @@ async function urlShortener() {
     messageError.style.display = 'flex';
   }
 }
+
+shortenButton.addEventListener('click', urlShortener);
