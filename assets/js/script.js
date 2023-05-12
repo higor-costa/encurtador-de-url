@@ -19,5 +19,6 @@ async function urlShortener() {
   }
   catch (error) {
     console.log(error);
+    messageError.style.display = 'flex';
   }
 }
