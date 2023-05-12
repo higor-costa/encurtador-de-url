@@ -4,7 +4,7 @@ const messageError = inputUrl.nextElementSibling;
 const shortenButton = document.querySelector('#shortenButton');
 
 function copyUrl({ target }) {
-  
+  const copyButton = target;
 }
 
 function createResult(shortLink, originalLink) {
