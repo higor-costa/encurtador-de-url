@@ -11,6 +11,10 @@ function copyUrl({ target }) {
 
   copyButton.innerText = 'Copied!';
   copyButton.style.backgroundColor = 'hsl(260, 8%, 14%)';
+  setTimeout(() => {
+    copyButton.innerText = 'Copy';
+    copyButton.style.backgroundColor = 'hsl(180, 66%, 49%)';
+  }, 2000)
 }
 
 function createResult(shortLink, originalLink) {
