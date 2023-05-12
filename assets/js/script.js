@@ -13,6 +13,7 @@ function createResult(shortLink, originalLink) {
       <button class="button--cyan" id="copyButton">Copy</button>
     </div>
   `
+  shortenerContainer.appendChild(div);
 }
 
 async function urlShortener() {
