@@ -8,6 +8,9 @@ function copyUrl({ target }) {
   const shortUrl = copyButton.previousElementSibling.innerText;
 
   navigator.clipboard.writeText(shortUrl);
+
+  copyButton.innerText = 'Copied!';
+  copyButton.style.backgroundColor = 'hsl(260, 8%, 14%)';
 }
 
 function createResult(shortLink, originalLink) {
