@@ -14,6 +14,11 @@ function createResult(shortLink, originalLink) {
     </div>
   `
   shortenerContainer.appendChild(div);
+
+  const copyButtonArray = document.querySelectorAll('#copyButton');
+  copyButtonArray.forEach(button => {
+    button.addEventListener('click', copyUrl);
+  })
 }
 
 async function urlShortener() {
