@@ -5,6 +5,7 @@ const shortenButton = document.querySelector('#shortenButton');
 
 function createResult(shortLink, originalLink) {
   const div = document.createElement('div');
+  div.className = 'links';
 }
 
 async function urlShortener() {
