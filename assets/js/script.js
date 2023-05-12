@@ -6,6 +6,13 @@ const shortenButton = document.querySelector('#shortenButton');
 function createResult(shortLink, originalLink) {
   const div = document.createElement('div');
   div.className = 'links';
+  div.innerHTML = `
+    <span class="links__normal">${originalLink}</span>
+    <div>
+      <span class="links__shortened">${shortLink}</span>
+      <button class="button--cyan" id="copyButton">Copy</button>
+    </div>
+  `
 }
 
 async function urlShortener() {
