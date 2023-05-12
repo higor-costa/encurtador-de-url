@@ -3,6 +3,10 @@ const inputUrl = document.querySelector('.shortener__input');
 const messageError = inputUrl.nextElementSibling;
 const shortenButton = document.querySelector('#shortenButton');
 
+function copyUrl({ target }) {
+  
+}
+
 function createResult(shortLink, originalLink) {
   const div = document.createElement('div');
   div.className = 'links';
