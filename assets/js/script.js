@@ -4,7 +4,7 @@ const messageError = inputUrl.nextElementSibling;
 const shortenButton = document.querySelector('#shortenButton');
 
 function createResult(shortLink, originalLink) {
-  
+  const div = document.createElement('div');
 }
 
 async function urlShortener() {
