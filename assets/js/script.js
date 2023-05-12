@@ -5,6 +5,7 @@ const shortenButton = document.querySelector('#shortenButton');
 
 function copyUrl({ target }) {
   const copyButton = target;
+  const shortUrl = copyButton.previousElementSibling.innerText;
 }
 
 function createResult(shortLink, originalLink) {
