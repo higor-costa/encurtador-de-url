@@ -3,6 +3,10 @@ const inputUrl = document.querySelector('.shortener__input');
 const messageError = inputUrl.nextElementSibling;
 const shortenButton = document.querySelector('#shortenButton');
 
+function createResult(shortLink, originalLink) {
+  
+}
+
 async function urlShortener() {
   const url = inputUrl.value;
 
