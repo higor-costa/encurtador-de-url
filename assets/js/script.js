@@ -12,6 +12,8 @@ async function urlShortener() {
 
     const shortLink = json.result.full_short_link;
     const originalLink = json.result.original_link;
+
+    createResult(shortLink, originalLink);
   }
   catch (error) {
     console.log(error);
