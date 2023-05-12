@@ -9,6 +9,9 @@ async function urlShortener() {
   try {
     const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
     const json = await response.json();
+
+    const shortLink = json.result.full_short_link;
+    const originalLink = json.result.original_link;
   }
   catch (error) {
     console.log(error);
