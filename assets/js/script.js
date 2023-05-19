@@ -36,7 +36,7 @@ function createResult(shortLink, originalLink) {
       <button class="button--cyan" id="copyButton">Copy</button>
     </div>
   `
-  shortenerContainer.appendChild(div);
+  containerInput.insertAdjacentElement('afterend', div);
 
   const copyButtonArray = document.querySelectorAll('#copyButton');
   copyButtonArray.forEach(button => {
