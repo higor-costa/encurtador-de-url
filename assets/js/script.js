@@ -48,6 +48,8 @@ function createResult(shortLink, originalLink) {
 function CheckNumbersResults(shortLink, originalLink) {
   if (resultsArray.length === 3) {
     replaceResult();
+  } else {
+    createResult(shortLink, originalLink);
   }
 }
 
