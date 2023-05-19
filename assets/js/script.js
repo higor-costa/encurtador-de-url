@@ -69,6 +69,7 @@ function linkReplacement() {
   const dataIndex = linkReplaced.dataset.index;
   const resultReplaced = document.querySelectorAll('.links')[dataIndex];
   shortenerContainer.removeChild(resultReplaced);
+  resultsArray.splice(dataIndex, 1);
 }
 
 shortenButton.addEventListener('click', urlShortener);
