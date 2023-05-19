@@ -45,6 +45,10 @@ function createResult(shortLink, originalLink) {
   })
 }
 
+function CheckNumbersResults(shortLink, originalLink) {
+  
+}
+
 async function urlShortener() {
   const url = inputUrl.value;
 
