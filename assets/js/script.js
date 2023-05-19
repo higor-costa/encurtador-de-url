@@ -64,6 +64,7 @@ function chosenLink({target}) {
   });
 
   darkLinkButton.style.backgroundColor = 'rgb(35, 33, 39)';
+  linkReplaced = darkLinkButton;
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
