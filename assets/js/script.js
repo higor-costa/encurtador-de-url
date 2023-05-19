@@ -57,6 +57,11 @@ function replaceResult() {
 
 function chosenLink({target}) {
   const darkLinkButton = target;
+
+  arrayButtonsLinks.forEach(button => {
+    const linkCyanButton = button;
+    linkCyanButton.style.backgroundColor = 'rgb(42, 207, 207)';
+  });
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
