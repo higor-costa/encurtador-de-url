@@ -62,6 +62,8 @@ function chosenLink({target}) {
     const linkCyanButton = button;
     linkCyanButton.style.backgroundColor = 'rgb(42, 207, 207)';
   });
+
+  darkLinkButton.style.backgroundColor = 'rgb(35, 33, 39)';
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
