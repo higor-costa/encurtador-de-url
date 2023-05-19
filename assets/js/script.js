@@ -70,6 +70,7 @@ function linkReplacement() {
   const resultReplaced = document.querySelectorAll('.links')[dataIndex];
   shortenerContainer.removeChild(resultReplaced);
   resultsArray.splice(dataIndex, 1);
+  containerModal.classList.remove('active');
 }
 
 shortenButton.addEventListener('click', urlShortener);
