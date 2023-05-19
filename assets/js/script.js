@@ -70,3 +70,6 @@ arrayButtonsLinks.forEach(button => {
   button.addEventListener('click', chosenLink)
 });
 buttonConfirm.addEventListener('click', linkReplacement);
+buttonCancel.addEventListener('click', () => {
+  containerModal.classList.remove('active');
+});
