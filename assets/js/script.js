@@ -45,6 +45,10 @@ function createResult(shortLink, originalLink) {
   })
 }
 
+function replaceResult() {
+  
+}
+
 function CheckNumbersResults(shortLink, originalLink) {
   if (resultsArray.length === 3) {
     replaceResult();
