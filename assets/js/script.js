@@ -47,6 +47,10 @@ function createResult(shortLink, originalLink) {
 
 function replaceResult() {
   newLink.innerText = inputUrl.value;
+
+  resultsArray.forEach((link, index) => {
+    arrayButtonsLinks[index].innerText = link;
+  });
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
