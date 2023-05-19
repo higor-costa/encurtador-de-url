@@ -65,6 +65,10 @@ async function urlShortener() {
   }
 }
 
+function linkReplacement() {
+  
+}
+
 shortenButton.addEventListener('click', urlShortener);
 arrayButtonsLinks.forEach(button => {
   button.addEventListener('click', chosenLink)
