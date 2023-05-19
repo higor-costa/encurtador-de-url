@@ -10,6 +10,7 @@ const buttonCancel = document.querySelector('.button-cancel');
 const containerInput = document.querySelector('.shortener');
 
 let linkReplaced;
+const resultsArray = [];
 
 function copyUrl({ target }) {
   const copyButton = target;
