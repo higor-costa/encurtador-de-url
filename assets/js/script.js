@@ -66,7 +66,7 @@ async function urlShortener() {
 }
 
 function linkReplacement() {
-  
+  const dataIndex = linkReplaced.dataset.index;
 }
 
 shortenButton.addEventListener('click', urlShortener);
