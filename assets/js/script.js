@@ -56,7 +56,7 @@ function replaceResult() {
 }
 
 function chosenLink({target}) {
-  
+  const darkLinkButton = target;
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
