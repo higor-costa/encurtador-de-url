@@ -69,3 +69,4 @@ shortenButton.addEventListener('click', urlShortener);
 arrayButtonsLinks.forEach(button => {
   button.addEventListener('click', chosenLink)
 });
+buttonConfirm.addEventListener('click', linkReplacement);
