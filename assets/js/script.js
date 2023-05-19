@@ -37,6 +37,7 @@ function createResult(shortLink, originalLink) {
     </div>
   `
   containerInput.insertAdjacentElement('afterend', div);
+  resultsArray.unshift(originalLink);
 
   const copyButtonArray = document.querySelectorAll('#copyButton');
   copyButtonArray.forEach(button => {
