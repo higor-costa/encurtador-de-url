@@ -51,6 +51,8 @@ function replaceResult() {
   resultsArray.forEach((link, index) => {
     arrayButtonsLinks[index].innerText = link;
   });
+
+  containerModal.classList.add('active');
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
