@@ -55,6 +55,10 @@ function replaceResult() {
   containerModal.classList.add('active');
 }
 
+function chosenLink({target}) {
+  
+}
+
 function CheckNumbersResults(shortLink, originalLink) {
   if (resultsArray.length === 3) {
     replaceResult();
