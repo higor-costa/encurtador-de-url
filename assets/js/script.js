@@ -46,7 +46,9 @@ function createResult(shortLink, originalLink) {
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
-  
+  if (resultsArray.length === 3) {
+    replaceResult();
+  }
 }
 
 async function urlShortener() {
