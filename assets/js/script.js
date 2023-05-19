@@ -9,6 +9,8 @@ const buttonConfirm = document.querySelector('.button-confirm');
 const buttonCancel = document.querySelector('.button-cancel');
 const containerInput = document.querySelector('.shortener');
 
+let linkReplaced;
+
 function copyUrl({ target }) {
   const copyButton = target;
   const shortUrl = copyButton.previousElementSibling.innerText;
