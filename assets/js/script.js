@@ -46,7 +46,7 @@ function createResult(shortLink, originalLink) {
 }
 
 function replaceResult() {
-  
+  newLink.innerText = inputUrl.value;
 }
 
 function CheckNumbersResults(shortLink, originalLink) {
