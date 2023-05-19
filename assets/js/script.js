@@ -71,6 +71,7 @@ function linkReplacement() {
   shortenerContainer.removeChild(resultReplaced);
   resultsArray.splice(dataIndex, 1);
   containerModal.classList.remove('active');
+  urlShortener();
 }
 
 shortenButton.addEventListener('click', urlShortener);
