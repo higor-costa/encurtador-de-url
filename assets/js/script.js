@@ -2,6 +2,12 @@ const shortenerContainer = document.querySelector('.section-shorten');
 const inputUrl = document.querySelector('.shortener__input');
 const messageError = inputUrl.nextElementSibling;
 const shortenButton = document.querySelector('#shortenButton');
+const containerModal = document.querySelector('.container-modal');
+const newLink = document.querySelector('.modal__new-link');
+const arrayButtonsLinks = document.querySelectorAll('.buttons-links');
+const buttonConfirm = document.querySelector('.button-confirm');
+const buttonCancel = document.querySelector('.button-cancel');
+const containerInput = document.querySelector('.shortener');
 
 function copyUrl({ target }) {
   const copyButton = target;
