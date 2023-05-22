@@ -15,7 +15,7 @@
   \*****************************/
 /***/ (() => {
 
-eval("console.log('ok');\n\n//# sourceURL=webpack://encurtador-de-url/./assets/js/script.js?");
+eval("\n\n//# sourceURL=webpack://encurtador-de-url/./assets/js/script.js?");
 
 /***/ })
 
