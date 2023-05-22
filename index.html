@@ -9,6 +9,25 @@
   <link rel="stylesheet" href="assets/style/estilos.css">
 </head>
 <body>
+  <section class="container-modal">
+    <div class="modal">
+      <i class="fa-solid fa-triangle-exclamation" style="color: #ffea00;"></i>
+      <p>O limite de links exibidos foi atingido. Escolha qual dos 3 links você deseja substituir pelo novo link:</p>
+      <p><strong class="modal__new-link"></strong></p>
+      
+      <div class="modal__buttons-links">
+        <button class="buttons-links button-link-one button--cyan" data-index="0"></button>
+        <button class="buttons-links button-link-two button--cyan" data-index="1"></button>
+        <button class="buttons-links button-link-three button--cyan" data-index="2"></button>
+      </div>
+
+      <div class="modal_buttons">
+        <button class="button-confirm">Confirm</button>
+        <button class="button-cancel">Cancel</button>
+      </div>
+    </div>
+  </section>
+
   <header>
     <nav class="nav-container">
       <a href="#"><img src="assets/images/logo.svg" alt="Logo Shortly" class="nav__logo"></a>
@@ -50,15 +69,7 @@
           <input type="url" id="url" placeholder="Shorten a link here..." class="shortener__input">
           <span class="shortener__message-error">Please add a link</span>
         </div>
-        <button class="button--cyan">Shorten It!</button>
-      </div>
-
-      <div class="links">
-        <span class="links__normal">https://www.frontendmentor.io</span>
-        <div>
-          <span class="links__shortened">https://reLink/k4lKyk</span>
-          <button class="button--cyan">Copy</button>
-        </div>
+        <button class="button--cyan" id="shortenButton">Shorten It!</button>
       </div>
     </section>
 
@@ -138,6 +149,7 @@
     </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/47c43d19e3.js" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
