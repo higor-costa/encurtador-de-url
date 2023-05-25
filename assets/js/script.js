@@ -141,3 +141,4 @@ buttonConfirm.addEventListener('click', linkReplacement);
 buttonCancel.addEventListener('click', () => {
   containerModal.classList.remove('active');
 });
+window.addEventListener('load', getLinksStorage);
