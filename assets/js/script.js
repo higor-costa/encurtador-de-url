@@ -55,6 +55,10 @@ function sendLinksStorage(linksObject) {
   setLocalStorage();
 }
 
+function deleteLinksStorage(index) {
+  
+}
+
 function replaceResult() {
   newLink.innerText = inputUrl.value;
 
