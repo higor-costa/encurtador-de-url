@@ -50,7 +50,7 @@ const getLocalStorage = () => JSON.parse(localStorage.getItem('links')) ?? [];
 const setLocalStorage = () => localStorage.setItem('links', JSON.stringify(arrayStorage));
 
 function sendLinksStorage(linksObject) {
-  
+  arrayStorage = getLocalStorage();
 }
 
 function replaceResult() {
