@@ -98,6 +98,7 @@ function CheckNumbersResults(shortLink, originalLink) {
     replaceResult();
   } else {
     createResult(shortLink, originalLink);
+    const linksObject = {shortLink, originalLink};
   }
 }
 
