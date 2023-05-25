@@ -99,6 +99,7 @@ function CheckNumbersResults(shortLink, originalLink) {
   } else {
     createResult(shortLink, originalLink);
     const linksObject = {shortLink, originalLink};
+    sendLinksStorage(linksObject);
   }
 }
 
