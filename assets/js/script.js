@@ -125,6 +125,7 @@ async function urlShortener() {
 
 function linkReplacement() {
   const dataIndex = linkReplaced.dataset.index;
+  deleteLinksStorage(dataIndex);
   const resultReplaced = document.querySelectorAll('.links')[dataIndex];
   shortenerContainer.removeChild(resultReplaced);
   resultsArray.splice(dataIndex, 1);
