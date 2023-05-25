@@ -56,7 +56,7 @@ function sendLinksStorage(linksObject) {
 }
 
 function deleteLinksStorage(index) {
-  
+  arrayStorage = getLocalStorage();
 }
 
 function replaceResult() {
