@@ -47,6 +47,7 @@ function createResult(shortLink, originalLink) {
 }
 
 const getLocalStorage = () => JSON.parse(localStorage.getItem('links')) ?? [];
+const setLocalStorage = () => localStorage.setItem('links', JSON.stringify(arrayStorage));
 
 function replaceResult() {
   newLink.innerText = inputUrl.value;
