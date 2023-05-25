@@ -62,7 +62,13 @@ function deleteLinksStorage(index) {
 }
 
 function getLinksStorage() {
-  
+  if(window.localStorage.length) {
+    arrayStorage = getLocalStorage();
+    arrayStorage.forEach((linksObject) => {
+      const { shortLink, originalLink } = linksObject;
+      createResult(shortLink, originalLink);
+    })
+  }
 }
 
 function replaceResult() {
