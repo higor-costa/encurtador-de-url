@@ -10,6 +10,7 @@ const buttonCancel = document.querySelector('.button-cancel');
 const containerInput = document.querySelector('.shortener');
 
 let linkReplaced;
+let arrayStorage;
 const resultsArray = [];
 
 function copyUrl({ target }) {
@@ -45,6 +46,31 @@ function createResult(shortLink, originalLink) {
   })
 }
 
+const getLocalStorage = () => JSON.parse(localStorage.getItem('links')) ?? [];
+const setLocalStorage = () => localStorage.setItem('links', JSON.stringify(arrayStorage));
+
+function sendLinksStorage(linksObject) {
+  arrayStorage = getLocalStorage();
+  arrayStorage.unshift(linksObject);
+  setLocalStorage();
+}
+
+function deleteLinksStorage(index) {
+  arrayStorage = getLocalStorage();
+  arrayStorage.splice(index, 1);
+  setLocalStorage();
+}
+
+function getLinksStorage() {
+  if(window.localStorage.length) {
+    arrayStorage = getLocalStorage();
+    arrayStorage.forEach((linksObject) => {
+      const { shortLink, originalLink } = linksObject;
+      createResult(shortLink, originalLink);
+    })
+  }
+}
+
 function replaceResult() {
   newLink.innerText = inputUrl.value;
 
@@ -72,6 +98,8 @@ function CheckNumbersResults(shortLink, originalLink) {
     replaceResult();
   } else {
     createResult(shortLink, originalLink);
+    const linksObject = {shortLink, originalLink};
+    sendLinksStorage(linksObject);
   }
 }
 
@@ -97,6 +125,7 @@ async function urlShortener() {
 
 function linkReplacement() {
   const dataIndex = linkReplaced.dataset.index;
+  deleteLinksStorage(dataIndex);
   const resultReplaced = document.querySelectorAll('.links')[dataIndex];
   shortenerContainer.removeChild(resultReplaced);
   resultsArray.splice(dataIndex, 1);
@@ -112,3 +141,4 @@ buttonConfirm.addEventListener('click', linkReplacement);
 buttonCancel.addEventListener('click', () => {
   containerModal.classList.remove('active');
 });
+window.addEventListener('load', getLinksStorage);
