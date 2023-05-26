@@ -189,6 +189,10 @@ header .nav-container {
   background: var(--Dark-Violet);
 }
 
+.nav-container .nav-items.active {
+  display: flex;
+}
+
 .nav-items .nav__divisor {
   content: '';
   width: 95%;
