@@ -146,6 +146,9 @@ function linkReplacement() {
   urlShortener();
 }
 
+iconMenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
 shortenButton.addEventListener('click', urlShortener);
 arrayButtonsLinks.forEach(button => {
   button.addEventListener('click', chosenLink)
