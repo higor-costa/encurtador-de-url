@@ -125,8 +125,7 @@ async function urlShortener() {
     const originalLink = json.result.original_link;
 
     CheckNumbersResults(shortLink, originalLink);
-    
-    messageError.style.display = 'none';
+    shortenerErrorMessage(false);
   }
   catch (error) {
     if (inputUrl.value === '') messageError.innerText = 'Please add a link';
