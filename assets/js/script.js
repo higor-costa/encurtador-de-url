@@ -8,6 +8,7 @@ const arrayButtonsLinks = document.querySelectorAll('.buttons-links');
 const buttonConfirm = document.querySelector('.button-confirm');
 const buttonCancel = document.querySelector('.button-cancel');
 const containerInput = document.querySelector('.shortener');
+const iconMenu = document.querySelector('#nav__icon-menu');
 
 let linkReplaced;
 let arrayStorage;
