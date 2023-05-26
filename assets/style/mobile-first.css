@@ -187,6 +187,14 @@ header .nav-container {
   width: calc(100% - 3rem);
   padding: 40px 20px;
   background: var(--Dark-Violet);
+  transform: translateY(-20px);
+  animation: menuBottom .5s forwards;
+}
+
+@keyframes menuBottom {
+  to {
+    transform: initial;
+  }
 }
 
 .nav-container .nav-items.active {
