@@ -129,8 +129,10 @@ async function urlShortener() {
     messageError.style.display = 'none';
   }
   catch (error) {
-    console.log(error);
-    messageError.style.display = 'flex';
+    if (inputUrl.value === '') messageError.innerText = 'Please add a link';
+    else messageError.innerText = error;
+
+    shortenerErrorMessage(true);
   }
 }
 
