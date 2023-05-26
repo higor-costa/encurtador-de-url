@@ -345,6 +345,10 @@ div .shortener__message-error {
   align-self: flex-start;
 }
 
+div .shortener__message-error.active {
+  display: block;
+}
+
 /* MAIN: Shortener links */
 .section-shorten .links {
   background-color: white;
