@@ -9,6 +9,7 @@ const buttonConfirm = document.querySelector('.button-confirm');
 const buttonCancel = document.querySelector('.button-cancel');
 const containerInput = document.querySelector('.shortener');
 const iconMenu = document.querySelector('#nav__icon-menu');
+const menu = document.querySelector('.nav-items');
 
 let linkReplaced;
 let arrayStorage;
