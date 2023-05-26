@@ -103,6 +103,11 @@ function CheckNumbersResults(shortLink, originalLink) {
   }
 }
 
+function shortenerErrorMessage(active) {
+  if (active) messageError.classList.add('active');
+  else messageError.classList.remove('active');
+}
+
 async function urlShortener() {
   const url = inputUrl.value;
 
