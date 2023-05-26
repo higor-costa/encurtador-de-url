@@ -120,7 +120,6 @@ async function urlShortener() {
     }
     
     const json = await response.json();
-
     const shortLink = json.result.full_short_link;
     const originalLink = json.result.original_link;
 
