@@ -101,6 +101,8 @@ function replaceResult() {
 
 function chosenLink({target}) {
   const darkLinkButton = target;
+  buttonConfirm.classList.add('enabled');
+  buttonConfirm.removeAttribute('disabled');
 
   modalElementsStyle(true)
 
