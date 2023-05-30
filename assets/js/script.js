@@ -96,15 +96,13 @@ function replaceResult() {
   });
 
   containerModal.classList.add('active');
+  modalElementsStyle(true)
 }
 
 function chosenLink({target}) {
   const darkLinkButton = target;
 
-  arrayButtonsLinks.forEach(button => {
-    const linkCyanButton = button;
-    linkCyanButton.style.backgroundColor = 'rgb(42, 207, 207)';
-  });
+  modalElementsStyle(true)
 
   darkLinkButton.style.backgroundColor = 'rgb(35, 33, 39)';
   linkReplaced = darkLinkButton;
@@ -157,7 +155,7 @@ function linkReplacement() {
   const resultReplaced = document.querySelectorAll('.links')[dataIndex];
   shortenerContainer.removeChild(resultReplaced);
   resultsArray.splice(dataIndex, 1);
-  containerModal.classList.remove('active');
+  modalElementsStyle(false);
   urlShortener();
 }
 
@@ -170,6 +168,6 @@ arrayButtonsLinks.forEach(button => {
 });
 buttonConfirm.addEventListener('click', linkReplacement);
 buttonCancel.addEventListener('click', () => {
-  containerModal.classList.remove('active');
+  modalElementsStyle(false);
 });
 window.addEventListener('load', getLinksStorage);
