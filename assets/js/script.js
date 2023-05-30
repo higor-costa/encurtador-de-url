@@ -73,6 +73,21 @@ function getLinksStorage() {
   }
 }
 
+function modalElementsStyle(openModal) {
+  if(openModal) {
+    arrayButtonsLinks.forEach(button => {
+      const linkCyanButton = button;
+      linkCyanButton.style.backgroundColor = 'rgb(42, 207, 207)';
+    });
+    containerModal.classList.add('active');
+  }
+  else {
+    buttonConfirm.classList.remove('enabled');
+    buttonConfirm.setAttribute('disabled', '');
+    containerModal.classList.remove('active');
+  }
+}
+
 function replaceResult() {
   newLink.innerText = inputUrl.value;
 
