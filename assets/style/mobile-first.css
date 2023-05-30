@@ -108,6 +108,7 @@ body {
 .modal_buttons .button-confirm:hover {
   border: 1px solid var(--Grayish-Violet);
   color: var(--Grayish-Violet);
+  cursor: pointer;
 }
 
 .modal_buttons .button-cancel {
