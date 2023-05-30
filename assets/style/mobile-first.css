@@ -102,6 +102,7 @@ body {
 .modal_buttons .button-confirm {
   background: var(--Grayish-Violet);
   margin-right: 15px;
+  cursor: not-allowed;
 }
 
 .modal_buttons .button-confirm:hover {
