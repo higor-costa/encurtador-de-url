@@ -95,7 +95,8 @@ body {
   transition: .3s;
 }
 
-.modal_buttons button:hover {
+.modal_buttons .button-confirm.enabled:hover,
+.modal_buttons .button-cancel:hover {
     background: transparent;
 }
 
