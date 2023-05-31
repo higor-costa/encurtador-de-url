@@ -384,6 +384,7 @@ div .shortener__message-error.active {
   padding: 15px;
   border-bottom: 1px solid var(--Gray);
   color: var(--Very-Dark-Violet);
+  max-width: 35rem;
 }
 
 .links div {
