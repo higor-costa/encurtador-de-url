@@ -111,7 +111,8 @@
   }
 
   .section-shorten .shortener {
-    flex-direction: row
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .shortener div {
