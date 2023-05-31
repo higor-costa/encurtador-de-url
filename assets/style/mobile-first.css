@@ -83,6 +83,10 @@ body {
   font-size: .8rem;
 }
 
+.modal .text-ellipsis {
+  width: 17rem;
+}
+
 .modal__buttons-links {
   display: flex;
   flex-direction: column;
