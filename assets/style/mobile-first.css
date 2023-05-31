@@ -32,6 +32,12 @@ body {
   position: relative;
 }
 
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Modal */
 .container-modal {
   position: absolute;
@@ -77,6 +83,14 @@ body {
   font-size: .8rem;
 }
 
+.modal p.text-ellipsis {
+  text-align: center;
+}
+
+.modal .text-ellipsis {
+  width: 17rem;
+}
+
 .modal__buttons-links {
   display: flex;
   flex-direction: column;
@@ -95,18 +109,21 @@ body {
   transition: .3s;
 }
 
-.modal_buttons button:hover {
+.modal_buttons .button-confirm.enabled:hover,
+.modal_buttons .button-cancel:hover {
     background: transparent;
 }
 
 .modal_buttons .button-confirm {
   background: var(--Grayish-Violet);
   margin-right: 15px;
+  cursor: not-allowed;
 }
 
-.modal_buttons .button-confirm:hover {
+.modal_buttons .button-confirm.enabled:hover {
   border: 1px solid var(--Grayish-Violet);
   color: var(--Grayish-Violet);
+  cursor: pointer;
 }
 
 .modal_buttons .button-cancel {
@@ -126,7 +143,7 @@ header {
 header .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 25px;
   margin-bottom: 15px;
 }
@@ -187,6 +204,18 @@ header .nav-container {
   width: calc(100% - 3rem);
   padding: 40px 20px;
   background: var(--Dark-Violet);
+  transform: translateY(-20px);
+  animation: menuBottom .5s forwards;
+}
+
+@keyframes menuBottom {
+  to {
+    transform: initial;
+  }
+}
+
+.nav-container .nav-items.active {
+  display: flex;
 }
 
 .nav-items .nav__divisor {
@@ -334,7 +363,7 @@ div .shortener__input:invalid {
 }
 
 div .shortener__input:invalid::placeholder {
-  color: var(red);
+  color: var(--Red);
 }
 
 div .shortener__message-error {
@@ -343,6 +372,10 @@ div .shortener__message-error {
   color: var(--Red);
   display: none;
   align-self: flex-start;
+}
+
+div .shortener__message-error.active {
+  display: block;
 }
 
 /* MAIN: Shortener links */
@@ -355,6 +388,7 @@ div .shortener__message-error {
   padding: 15px;
   border-bottom: 1px solid var(--Gray);
   color: var(--Very-Dark-Violet);
+  max-width: 35rem;
 }
 
 .links div {

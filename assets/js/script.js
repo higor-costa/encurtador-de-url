@@ -8,6 +8,8 @@ const arrayButtonsLinks = document.querySelectorAll('.buttons-links');
 const buttonConfirm = document.querySelector('.button-confirm');
 const buttonCancel = document.querySelector('.button-cancel');
 const containerInput = document.querySelector('.shortener');
+const iconMenu = document.querySelector('#nav__icon-menu');
+const menu = document.querySelector('.nav-items');
 
 let linkReplaced;
 let arrayStorage;
@@ -31,7 +33,7 @@ function createResult(shortLink, originalLink) {
   const div = document.createElement('div');
   div.className = 'links';
   div.innerHTML = `
-    <span class="links__normal">${originalLink}</span>
+    <span class="links__normal text-ellipsis">${originalLink}</span>
     <div>
       <span class="links__shortened">${shortLink}</span>
       <button class="button--cyan" id="copyButton">Copy</button>
@@ -71,6 +73,21 @@ function getLinksStorage() {
   }
 }
 
+function modalElementsStyle(openModal) {
+  if(openModal) {
+    arrayButtonsLinks.forEach(button => {
+      const linkCyanButton = button;
+      linkCyanButton.style.backgroundColor = 'rgb(42, 207, 207)';
+    });
+    containerModal.classList.add('active');
+  }
+  else {
+    buttonConfirm.classList.remove('enabled');
+    buttonConfirm.setAttribute('disabled', '');
+    containerModal.classList.remove('active');
+  }
+}
+
 function replaceResult() {
   newLink.innerText = inputUrl.value;
 
@@ -79,15 +96,15 @@ function replaceResult() {
   });
 
   containerModal.classList.add('active');
+  modalElementsStyle(true)
 }
 
 function chosenLink({target}) {
   const darkLinkButton = target;
+  buttonConfirm.classList.add('enabled');
+  buttonConfirm.removeAttribute('disabled');
 
-  arrayButtonsLinks.forEach(button => {
-    const linkCyanButton = button;
-    linkCyanButton.style.backgroundColor = 'rgb(42, 207, 207)';
-  });
+  modalElementsStyle(true)
 
   darkLinkButton.style.backgroundColor = 'rgb(35, 33, 39)';
   linkReplaced = darkLinkButton;
@@ -103,23 +120,34 @@ function CheckNumbersResults(shortLink, originalLink) {
   }
 }
 
+function shortenerErrorMessage(active) {
+  if (active) messageError.classList.add('active');
+  else messageError.classList.remove('active');
+}
+
 async function urlShortener() {
   const url = inputUrl.value;
 
   try {
     const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
-    const json = await response.json();
 
+    if(!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error);      
+    }
+    
+    const json = await response.json();
     const shortLink = json.result.full_short_link;
     const originalLink = json.result.original_link;
 
     CheckNumbersResults(shortLink, originalLink);
-    
-    messageError.style.display = 'none';
+    shortenerErrorMessage(false);
   }
   catch (error) {
-    console.log(error);
-    messageError.style.display = 'flex';
+    if (inputUrl.value === '') messageError.innerText = 'Please add a link';
+    else messageError.innerText = error;
+
+    shortenerErrorMessage(true);
   }
 }
 
@@ -129,16 +157,19 @@ function linkReplacement() {
   const resultReplaced = document.querySelectorAll('.links')[dataIndex];
   shortenerContainer.removeChild(resultReplaced);
   resultsArray.splice(dataIndex, 1);
-  containerModal.classList.remove('active');
+  modalElementsStyle(false);
   urlShortener();
 }
 
+iconMenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
 shortenButton.addEventListener('click', urlShortener);
 arrayButtonsLinks.forEach(button => {
   button.addEventListener('click', chosenLink)
 });
 buttonConfirm.addEventListener('click', linkReplacement);
 buttonCancel.addEventListener('click', () => {
-  containerModal.classList.remove('active');
+  modalElementsStyle(false);
 });
 window.addEventListener('load', getLinksStorage);
