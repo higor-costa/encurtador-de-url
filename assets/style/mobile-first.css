@@ -363,7 +363,7 @@ div .shortener__input:invalid {
 }
 
 div .shortener__input:invalid::placeholder {
-  color: var(red);
+  color: var(--Red);
 }
 
 div .shortener__message-error {
