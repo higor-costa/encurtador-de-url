@@ -83,6 +83,10 @@ body {
   font-size: .8rem;
 }
 
+.modal p.text-ellipsis {
+  text-align: center;
+}
+
 .modal .text-ellipsis {
   width: 17rem;
 }
