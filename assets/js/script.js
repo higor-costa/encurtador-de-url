@@ -110,10 +110,12 @@ function modalElementsStyle(openModal) {
   }
 }
 
+// Função para atualizar dados do modal e depois abri-lo
 function replaceResult() {
   newLink.innerText = inputUrl.value;
 
   resultsArray.forEach((link, index) => {
+    // Define o texto de cada botão de link, presente no modal, com o link original correspondente
     arrayButtonsLinks[index].innerText = link;
   });
 
