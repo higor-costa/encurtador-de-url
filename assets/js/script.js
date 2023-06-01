@@ -65,6 +65,7 @@ const getLocalStorage = () => JSON.parse(localStorage.getItem('links')) ?? [];
 // Armazena um array no armazenamento local, convertendo-o em uma string JSON.
 const setLocalStorage = () => localStorage.setItem('links', JSON.stringify(arrayStorage));
 
+// Função para enviar um objeto de links para o armazenamento local
 function sendLinksStorage(linksObject) {
   arrayStorage = getLocalStorage();
   arrayStorage.unshift(linksObject);
