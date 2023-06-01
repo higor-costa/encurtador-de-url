@@ -34,6 +34,7 @@ function copyUrl({ target }) {
   }, 2000)
 }
 
+// Função para criar um novo resultado de link encurtado e adicioná-lo ao DOM
 function createResult(shortLink, originalLink) {
   const div = document.createElement('div');
   div.className = 'links';
@@ -44,7 +45,11 @@ function createResult(shortLink, originalLink) {
       <button class="button--cyan" id="copyButton">Copy</button>
     </div>
   `
+
+  // Insere o elemento div logo após o elemento 'containerInput'
   containerInput.insertAdjacentElement('afterend', div);
+
+  // Adiciona o link original ao início do array 'resultsArray'
   resultsArray.unshift(originalLink);
 
   const copyButtonArray = document.querySelectorAll('#copyButton');
