@@ -137,12 +137,17 @@ function chosenLink({target}) {
   linkReplaced = darkLinkButton;
 }
 
+// Função para verificar a quantidade de resultados existentes e executar a ação apropriada.
 function CheckNumbersResults(shortLink, originalLink) {
   if (resultsArray.length === 3) {
+    // Se já existem 3 resultados, abre o modal para o usuário
+    // escolher qual deles deve ser substituído pelo novo resultado
     replaceResult();
   } else {
+    // Cria um novo resultado
     createResult(shortLink, originalLink);
     const linksObject = {shortLink, originalLink};
+    // Atualiza o armazenamento local com o novo objeto de links
     sendLinksStorage(linksObject);
   }
 }
