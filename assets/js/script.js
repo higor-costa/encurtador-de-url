@@ -123,13 +123,16 @@ function replaceResult() {
   modalElementsStyle(true)
 }
 
+// Marca o link selecionado para ser substituído e habilita o botão de confirmação.
 function chosenLink({target}) {
   const darkLinkButton = target;
   buttonConfirm.classList.add('enabled');
   buttonConfirm.removeAttribute('disabled');
 
+  // Aplica a cor de fundo padrão aos botões sempre que um botão for clicado
   modalElementsStyle(true)
 
+  // Destaca o botão clicado com uma cor de fundo diferente
   darkLinkButton.style.backgroundColor = 'rgb(35, 33, 39)';
   linkReplaced = darkLinkButton;
 }
