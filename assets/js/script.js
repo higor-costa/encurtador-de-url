@@ -152,6 +152,7 @@ function CheckNumbersResults(shortLink, originalLink) {
   }
 }
 
+// Função para controlar a exibição da mensagem de erro
 function shortenerErrorMessage(active) {
   if (active) messageError.classList.add('active');
   else messageError.classList.remove('active');
