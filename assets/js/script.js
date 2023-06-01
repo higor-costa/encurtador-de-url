@@ -58,7 +58,11 @@ function createResult(shortLink, originalLink) {
   })
 }
 
+// Retorna os dados do armazenamento local, convertidos de volta em um array.
+// Se nenhum dado for encontrado na Local Storage, retorna um array vazio.
 const getLocalStorage = () => JSON.parse(localStorage.getItem('links')) ?? [];
+
+// Armazena um array no armazenamento local, convertendo-o em uma string JSON.
 const setLocalStorage = () => localStorage.setItem('links', JSON.stringify(arrayStorage));
 
 function sendLinksStorage(linksObject) {
