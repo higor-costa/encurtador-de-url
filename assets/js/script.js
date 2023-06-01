@@ -93,8 +93,10 @@ function getLinksStorage() {
   }
 }
 
+// Função para controlar o estilo dos elementos do modal
 function modalElementsStyle(openModal) {
   if(openModal) {
+    // Aplica a cor de fundo padrão aos botões sempre que o modal for aberto
     arrayButtonsLinks.forEach(button => {
       const linkCyanButton = button;
       linkCyanButton.style.backgroundColor = 'rgb(42, 207, 207)';
