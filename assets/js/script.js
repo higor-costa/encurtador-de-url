@@ -208,20 +208,33 @@ function linkReplacement() {
 
   // Remove o link substituído do array "resultsArray"
   resultsArray.splice(dataIndex, 1);
-  
+
   modalElementsStyle(false);
   urlShortener();
 }
 
+// Eventos
+
+// Controla a exibição do menu de navegação
 iconMenu.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
+
+// Chama a função para encurtamento de URL
 shortenButton.addEventListener('click', urlShortener);
+
+// Chama a função que informa o link a ser substituido
 arrayButtonsLinks.forEach(button => {
   button.addEventListener('click', chosenLink)
 });
+
+// Chama a função para substituíção de link
 buttonConfirm.addEventListener('click', linkReplacement);
+
+// Fecha o modal
 buttonCancel.addEventListener('click', () => {
   modalElementsStyle(false);
 });
+
+// Chama a função para verificar o armazenamento local assim que a página é carregada
 window.addEventListener('load', getLinksStorage);
