@@ -79,10 +79,14 @@ function deleteLinksStorage(index) {
   setLocalStorage();
 }
 
+// Obtém os dados armazenados na Local Storage e cria resultados com base nesses dados.
+// Os resultados são criados chamando a função 'createResult' para cada objeto de links armazenado.
 function getLinksStorage() {
   if(window.localStorage.length) {
     arrayStorage = getLocalStorage();
+    // Itera sobre cada objeto de links no array
     arrayStorage.forEach((linksObject) => {
+      // Extrai as propriedades 'shortLink' e 'originalLink' do objeto
       const { shortLink, originalLink } = linksObject;
       createResult(shortLink, originalLink);
     })
