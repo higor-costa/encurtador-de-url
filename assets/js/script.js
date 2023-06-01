@@ -72,6 +72,7 @@ function sendLinksStorage(linksObject) {
   setLocalStorage();
 }
 
+// Função para excluir links do armazenamento local
 function deleteLinksStorage(index) {
   arrayStorage = getLocalStorage();
   arrayStorage.splice(index, 1);
