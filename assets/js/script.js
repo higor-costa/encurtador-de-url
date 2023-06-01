@@ -191,12 +191,24 @@ async function urlShortener() {
   }
 }
 
+// Função para substituir um link encurtado por outro.
 function linkReplacement() {
+  // Obtém o index do link substituído a partir do
+  // atributo "data-index" do elemento "linkReplaced"
   const dataIndex = linkReplaced.dataset.index;
+
+  // Chama a função deleteLinksStorage para remover o link substituído do armazenamento local
   deleteLinksStorage(dataIndex);
+
+  // Obtém a div correspondente ao link substituído
   const resultReplaced = document.querySelectorAll('.links')[dataIndex];
+
+  // Remove a div do DOM
   shortenerContainer.removeChild(resultReplaced);
+
+  // Remove o link substituído do array "resultsArray"
   resultsArray.splice(dataIndex, 1);
+  
   modalElementsStyle(false);
   urlShortener();
 }
