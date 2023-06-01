@@ -15,14 +15,19 @@ let linkReplaced;
 let arrayStorage;
 const resultsArray = [];
 
+// Função para copiar a URL encurtada para a área de transferência
 function copyUrl({ target }) {
   const copyButton = target;
   const shortUrl = copyButton.previousElementSibling.innerText;
 
+  // Copia o URL curto para a área de transferência do navegador
   navigator.clipboard.writeText(shortUrl);
 
+  // Altera o texto e o estilo do botão 'Copy' para indicar que a cópia foi realizada com sucesso
   copyButton.innerText = 'Copied!';
   copyButton.style.backgroundColor = 'hsl(260, 8%, 14%)';
+
+  // Define um atraso de 2 segundos antes de restaurar o texto e estilo original do botão
   setTimeout(() => {
     copyButton.innerText = 'Copy';
     copyButton.style.backgroundColor = 'hsl(180, 66%, 49%)';
