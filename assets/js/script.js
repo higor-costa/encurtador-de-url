@@ -158,17 +158,21 @@ function shortenerErrorMessage(active) {
   else messageError.classList.remove('active');
 }
 
+// Função para encurtar uma URL informada pelo usuário usando a API de encurtamento.
 async function urlShortener() {
   const url = inputUrl.value;
 
+  // Envia uma requisição para a API de encurtamento
   try {
     const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
 
     if(!response.ok) {
+      // Se a resposta não for bem-sucedida, obtém os dados de erro da resposta
       const errorData = await response.json();
       throw new Error(errorData.error);      
     }
     
+    // Extrai o link curto e o link original da resposta JSON
     const json = await response.json();
     const shortLink = json.result.full_short_link;
     const originalLink = json.result.original_link;
@@ -176,8 +180,11 @@ async function urlShortener() {
     CheckNumbersResults(shortLink, originalLink);
     shortenerErrorMessage(false);
   }
+  // Manipula erros ocorridos durante a execução
   catch (error) {
+    // Se a URL de entrada estiver vazia, exibe uma mensagem de erro específica
     if (inputUrl.value === '') messageError.innerText = 'Please add a link';
+    // Caso contrário, exibe a mensagem de erro capturada
     else messageError.innerText = error;
 
     shortenerErrorMessage(true);
