@@ -1,96 +1,67 @@
-# Frontend Mentor - Short Short URL Shorting API Challenge
+# Encurtador de URL
 
-![Visualização do design para o desafio de codificação da API de encurtamento de URL do Shortly](./design/desktop-preview.jpg)
+Esta é uma solução para o [desafio Shortly URL shorting API Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
 
-## Bem-vindo! 👋
+## **Índice**
 
-Obrigado por verificar este desafio de codificação de front-end.
+- [Encurtador de URL](#encurtador-de-url)
+  - [**Índice**](#índice)
+  - [**Visão geral**](#visão-geral)
+    - [**O que faz**](#o-que-faz)
+    - [**Utilidade**](#utilidade)
+    - [**Linguagem utilizada**](#linguagem-utilizada)
+  - [**Como executar**](#como-executar)
+    - [**Clone do repositório**](#clone-do-repositório)
+    - [**Dependências**](#dependências)
+    - [**Scripts de desenvolvimento**](#scripts-de-desenvolvimento)
+  - [**Links**](#links)
 
-Os desafios do [Frontend Mentor](https://www.frontendmentor.io) ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
+## **Visão geral**
 
-**Para fazer este desafio, você precisa ter um conhecimento básico de HTML, CSS e JavaScript.**
+###  **O que faz**
 
-## O desafio
+Encurta URL
 
-Seu desafio é criar essa página de destino, integrá-la à [API shrtcode](https://app.shrtco.de/) e deixá-la o mais próxima possível do design.
+### **Utilidade**
 
-Você pode usar qualquer ferramenta que desejar para ajudá-lo a concluir o desafio. Portanto, se você tem algo que gostaria de praticar, sinta-se à vontade para tentar.
+Todos os dias queremos compartilhar um vídeo, uma música, uma notícia, etc. Para isso é necessário enviar uma URL que, em muitas das vezes, é enorme. Um encurtador de URL se torna muito útil em uma situação como essa.
 
-Seus usuários devem ser capazes de:
+### **Linguagem utilizada**
 
-- Veja o layout ideal para o site, dependendo do tamanho da tela do dispositivo
-- Encurte qualquer URL válido
-- Veja uma lista de seus links encurtados, mesmo depois de atualizar o navegador
-- Copie o link encurtado para a área de transferência com um único clique
-- Receba uma mensagem de erro quando o `formulário` for enviado se:
-   - O campo `input` está vazio
+![JavaScript](https://img.shields.io/badge/-JavaScript-0D1117?style=for-the-badge&logo=javascript&labelColor=0D1117)&nbsp;
 
-Quer algum apoio no desafio? [Junte-se à nossa comunidade Slack](https://www.frontendmentor.io/slack) e faça perguntas no canal **#help**.
+## **Como executar**
 
-## Onde encontrar tudo
+### **Clone do repositório**
 
-Sua tarefa é construir o projeto para os designs dentro da pasta `/design`. Você encontrará uma versão móvel e uma versão para desktop do design.
+- Faça um clone [desse repositório](https://github.com/higor-costa/encurtador-de-url) em sua máquina
+- Crie uma pasta no seu computador para esse programa, recomendo colocar o nome **encurtador de link**
+- Abra o `git bash` ou `terminal` dentro dessa pasta
+- Copie a [URL](https://github.com/higor-costa/encurtador-de-url) do repositório
+- Digite `git clone <URL copiada>` e pressione `enter`
+### **Dependências**
 
-Os designs estão no formato estático JPG. Usar JPGs significa que você precisará usar seu melhor julgamento para estilos como `font-size`, `padding` e `margin`.
+Instale as dependências necessárias pelo bash/terminal, dentro dessa pasta criada:
+```
+npm install
+```
 
-Se você quiser que os arquivos de design (nós fornecemos as versões Sketch e Figma) inspecione o design com mais detalhes, você pode [inscrever-se como membro PRO](https://www.frontendmentor.io/pro).
+### **Scripts de desenvolvimento**
 
-Você encontrará todos os ativos necessários na pasta `/images`. Os recursos já estão otimizados.
+Utilização dos scripts presentes no arquivo `package.json`
 
-Há também um arquivo `style-guide.md` contendo as informações necessárias, como paleta de cores e fontes.
+- Para executar o **modo de desenvolvimento**, execute o seguinte comando:
+```
+npm run dev
+```
 
-## Construindo seu projeto
+- Para executar o **modo de produção**, execute o seguinte comando:
+```
+npm run build
+```
+## **Links**
 
-Sinta-se à vontade para usar qualquer fluxo de trabalho com o qual se sinta confortável. Abaixo está um processo sugerido, mas você não precisa seguir estas etapas:
+- [Solucão no Frontend Mentor](https://your-solution-url.com)
+- [Site ao vivo](https://your-live-site-url.com)
+- [API shrtcode](https://app.shrtco.de/)
 
-1. Inicialize seu projeto como um repositório público no [GitHub](https://github.com/). A criação de um repositório facilitará o compartilhamento de seu código com a comunidade, caso você precise de ajuda. Se você não tiver certeza de como fazer isso, [leia este recurso Try Git](https://try.github.io/).
-2. Configure seu repositório para publicar seu código em um endereço da web. Isso também será útil se você precisar de ajuda durante um desafio, pois pode compartilhar a URL do seu projeto com a URL do repositório. Existem várias maneiras de fazer isso e fornecemos algumas recomendações abaixo.
-3. Examine os designs para começar a planejar como você abordará o projeto. Esta etapa é crucial para ajudá-lo a pensar no futuro para que as classes CSS criem estilos reutilizáveis.
-4. Antes de adicionar qualquer estilo, estruture seu conteúdo com HTML. Escrever seu HTML primeiro pode ajudar a focar sua atenção na criação de conteúdo bem estruturado.
-5. Escreva os estilos básicos para seu projeto, incluindo estilos de conteúdo gerais, como `font-family` e `font-size`.
-6. Comece adicionando estilos ao topo da página e trabalhe para baixo. Apenas passe para a próxima seção quando estiver satisfeito por ter concluído a área em que está trabalhando.
-
-## Implantando seu projeto
-
-Como mencionado acima, existem muitas maneiras de hospedar seu projeto gratuitamente. Nossos anfitriões recomendados são:
-
-- [Páginas do GitHub](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-Você pode hospedar seu site usando uma dessas soluções ou qualquer um de nossos outros provedores confiáveis. [Leia mais sobre nossos hosts recomendados e confiáveis](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Crie um `README.md` personalizado
-
-Recomendamos fortemente substituir este `README.md` por um personalizado. Fornecemos um modelo dentro do arquivo [`README-template.md`](./README-template.md) neste código inicial.
-
-O modelo fornece um guia sobre o que adicionar. Um `README` personalizado ajudará você a explicar seu projeto e refletir sobre seus aprendizados. Sinta-se à vontade para editar nosso modelo o quanto quiser.
-
-Depois de adicionar suas informações ao modelo, exclua este arquivo e renomeie o arquivo `README-template.md` para `README.md`. Isso fará com que apareça como o arquivo README do seu repositório.
-
-## Enviando sua solução
-
-Envie sua solução na plataforma para o resto da comunidade ver. Siga nosso ["Guia completo para enviar soluções"](https://medium.com/frontend-mentor/a-complete-guide-to-submitted-solutions-on-frontend-mentor-ac6384162248) para obter dicas sobre como fazer esse.
-
-Lembre-se de que, se estiver procurando feedback sobre sua solução, faça perguntas ao enviá-la. Quanto mais específico e detalhado você for com suas perguntas, maior a chance de obter um feedback valioso da comunidade.
-
-## Compartilhando sua solução
-
-Existem vários lugares onde você pode compartilhar sua solução:
-
-1. Compartilhe sua página de solução no canal **#finished-projects** da [comunidade Slack](https://www.frontendmentor.io/slack).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) e mencione **@frontendmentor**, incluindo o repo e os URLs ativos no tweet. Adoraríamos dar uma olhada no que você construiu e ajudar a compartilhá-lo.
-3. Compartilhe sua solução em outros canais sociais como o LinkedIn.
-4. Faça um blog sobre sua experiência na construção de seu projeto. Escrever sobre seu fluxo de trabalho, escolhas técnicas e falar sobre seu código é uma maneira brilhante de reforçar o que você aprendeu. Ótimas plataformas para escrever são [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/) e [CodeNewbie](https://community.codenewbie.org /).
-
-Fornecemos modelos para ajudá-lo a compartilhar sua solução depois de enviá-la na plataforma. Edite-os e inclua perguntas específicas quando estiver procurando feedback.
-
-Quanto mais específico você for com suas perguntas, mais provável será que outro membro da comunidade lhe dê feedback.
-
-## Tem feedback para nós?
-
-Adoramos receber feedback! Estamos sempre buscando melhorar nossos desafios e nossa plataforma. Portanto, se você tiver algo que gostaria de mencionar, envie um e-mail hi[at]frontendmentor[dot]io.
-
-Este desafio é totalmente gratuito. Por favor, compartilhe com qualquer pessoa que achará útil para a prática.
-
-**Divirta-se construindo!** 🚀
