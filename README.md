@@ -61,7 +61,7 @@ npm run build
 ```
 ## **Links**
 
-- [Solucão no Frontend Mentor](https://your-solution-url.com)
-- [Site ao vivo](https://your-live-site-url.com)
+- [Solucão no Frontend Mentor](https://www.frontendmentor.io/solutions/encurtador-de-url-CEoCTbeO7_)
+- [Site ao vivo](https://higor-costa.github.io/encurtador-de-url/)
 - [API shrtcode](https://app.shrtco.de/)
 
